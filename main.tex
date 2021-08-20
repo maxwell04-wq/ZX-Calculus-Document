@@ -1,0 +1,49 @@
+\documentclass[11pt, twoside]{book}
+
+\input{preamble.tex}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{pdfpages}
+
+\begin{document}
+\pagestyle{empty}
+%Cover page
+\newgeometry{margin = 0in}
+\includepdf[width = \textwidth]{cover}
+\restoregeometry
+% Title page
+\include{title-ii}
+\cleardoublepage
+
+%-----------------------------------------------------------------------
+%-----------------------------------------------------------------------
+\pagestyle{fancy}
+\setcounter{page}{1}
+\pagenumbering{roman}
+
+\tableofcontents
+\include{Extras/acknowledgement}
+\include{Extras/preface}
+%-----------------------------------------------------------------------
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\fancyhead[L]{\leftmark}
+\newpage
+% % Chapters
+\include{Chapters/vectors}
+\include{Chapters/python}
+% \include{Chapters/diagrammatics}
+\include{Chapters/zx-intro}
+\include{Chapters/pyzx}
+\include{Chapters/optimisation}
+%-----------------------------------------------------------------------
+\pagestyle{empty}
+\afterpage{\null\newpage}
+%-----------------------------------------------------------------------
+
+
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}

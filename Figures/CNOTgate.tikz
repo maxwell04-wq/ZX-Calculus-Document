@@ -1,0 +1,4 @@
+\begin{tikzcd}
+& \ctrl{1} & \qw \\
+& \targ{} & \qw
+\end{tikzcd}

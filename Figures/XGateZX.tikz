@@ -1,0 +1,13 @@
+\begin{tikzpicture}
+\tikzstyle{operator} = [draw,fill=white,minimum size=1.5em] 
+
+	\begin{pgfonlayer}{nodelayer}
+		\node [] (0) at (-0.25, 0) {};
+		\node [] (1) at (1.75, 0) {};
+		\node [style=X dot] (2) at (0.75, 0) {$\pi$};
+	\end{pgfonlayer}
+	\begin{pgfonlayer}{edgelayer}
+		\draw (0.center) to (2);
+		\draw (2) to (1.center);
+	\end{pgfonlayer}
+\end{tikzpicture}

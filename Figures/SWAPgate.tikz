@@ -1,0 +1,4 @@
+\begin{tikzcd}
+& \swap{1} & \qw \\
+& \swap{0} & \qw
+\end{tikzcd}

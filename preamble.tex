@@ -1,0 +1,76 @@
+%Title
+\usepackage{comment}
+% This command changes the font style where SLU promotes Arial
+\newenvironment{myfont}{\fontfamily{phv}\selectfont}{\par}
+% Math packages
+\usepackage{steinmetz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{physics}
+\usepackage{nicefrac}
+% Image and float settings
+\usepackage{graphicx}
+\usepackage[font={small}]{caption}
+\usepackage{subcaption}
+\graphicspath{{./Figures/}}
+\newsavebox{\largestimage}
+\usepackage{float}
+\usepackage{longtable}
+% Tikz
+\usepackage{tikzit}
+\usetikzlibrary{scopes} 
+\usetikzlibrary{backgrounds}
+\usetikzlibrary{calc}
+\usetikzlibrary{quantikz}
+% Place images on top of page
+\makeatletter
+\setlength{\@fptop}{0pt}
+\makeatother
+%Glossary
+%\usepackage[toc, acronym, nonumberlist]{glossaries}
+% Page formatting
+\usepackage[margin=1in]{geometry}
+\usepackage{emptypage}
+% Color package
+\usepackage{xcolor}
+\colorlet{shadecolor}{blue!10}
+% Codes
+\usepackage{listings}
+\usepackage{pythonhighlight}
+\lstset{columns=fullflexible}
+\usepackage{spverbatim}
+\usepackage{minted}
+% Formatting of list items
+\usepackage{enumitem}
+% Dummy text
+\usepackage{lipsum}
+\usepackage{afterpage}
+% Clickable links
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue
+}
+% Remove indentation in paragraphs
+\setlength{\parindent}{0pt}
+\renewcommand{\baselinestretch}{1}
+% Remove dots in TOC
+\usepackage{tocloft}
+\renewcommand{\cftdot}{}
+% Parapgraph formatting
+\usepackage{parskip}
+\setlength{\parskip}{1em}
+% Multiple rows and columns
+\usepackage{multicol}
+\usepackage{multirow}
+% Headers and footers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+\fancyhead[R]{\thepage}
+\renewcommand{\headrulewidth}{1pt}
+
+\input{Tikzit/sample.tikzdefs}
+\input{Tikzit/sample.tikzstyles}
